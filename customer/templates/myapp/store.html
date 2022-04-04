@@ -1,0 +1,246 @@
+{% extends 'myapp/header.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <!-- start of navigation links to other pages -->
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link link-dark" href="#">Home /</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-dark  " href="#">Accessories /</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold  disabled" href="#">Men Watches</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- end of navigation links to other pages -->
+    <!-- start of sorting products dropdown  -->
+    <div class="d-flex justify-content-end ">
+        <div class="dropdown">
+            <button class="btn orange-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              Sort:What's New
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">What's New</a></li>
+                <li><a class="dropdown-item" href="#">Better Discount</a></li>
+                <li><a class="dropdown-item" href="#">Popularity</a></li>
+                <li><a class="dropdown-item" href="#">Price:Low to High</a></li>
+                <li><a class="dropdown-item" href="#">Price:Low to High</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end of sorting products dropdown  -->
+    <div class="row border-top ">
+        <!-- start of filter products  -->
+        <div class="col-md-2 border-end">
+            <b>FILTERS</b>
+            <!-- start of gender filter  -->
+            <div class="gender">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio">
+                    <label class="form-check-label">
+                Men
+              </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio">
+                    <label class="form-check-label">
+                Women
+              </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio">
+                    <label class="form-check-label">
+                Boys
+              </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio">
+                    <label class="form-check-label">
+                Girls
+              </label>
+                </div>
+            </div>
+            <!-- start of gender filter  -->
+            <!-- start of categories filter  -->
+            <div class="categories border-top">
+                <h6>CATEGORIES</h6>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                Watches(12218)
+              </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                Watch Gift Set(389)
+              </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                Smart Watches(110)
+              </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                Watch Organiser(45)
+              </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                Fitness Bands(17)
+              </label>
+                </div>
+            </div>
+            <!-- end of categories filter  -->
+            <!-- start of brands filter  -->
+            <div class="brands border-top">
+                <h6>BRAND</h6>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                Daniel Klein(1082)
+              </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                CASIO(641)
+              </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                Titan(568)
+              </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                Fastrack(553)
+              </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                GIORDANO(480)
+              </label>
+                </div>
+            </div>
+            <a href="#" class="link-danger">173 more</a>
+            <!-- end of brands filter  -->
+            <!-- start of price filter  -->
+            <div class="price border-top">
+                <h6>PRICE</h6>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                Rs. 272 to Rs. 28914(12455)
+              </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                Rs. 28914 to Rs. 57556(281)
+              </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                Rs. 57556 to Rs. 86198(40)
+              </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                Rs. 86198 to Rs. 114840(5)
+              </label>
+                </div>
+            </div>
+            <!-- end of price filter  -->
+            <!-- start of color filter  -->
+            <div class="color border-top">
+                <h6>COLOR</h6>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label" for="flexCheckDefault">
+                Black
+              </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input">
+                    <label class="form-check-label">
+                White
+              </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                Silver
+              </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                Blue
+              </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                Grey
+              </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                Navy Blue
+              </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                Brown
+              </label>
+                </div>
+            </div>
+            <!-- end of color filter  -->
+        </div>
+        <!-- end of filter products  -->
+
+
+        <!-- products display  -->
+        <div class="col-md-10 pt-2">
+            <div class="row">
+
+                <div class="col-md">
+                    <!-- card -->
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'assets/samsung-1.jpg' %}" class="card-img-top" style="height: 250px; width: 100%;" alt="product image">
+                        <div class="card-body">
+                            <h5 class="card-title">Samsung</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident, maiores error voluptatibus repudiandae a, officia rem soluta inventore iste praesentium molestiae voluptates quis. Id quaerat vero dolores quos ipsum?<br>Rs. 1500</p>
+                            <a href="#">
+                                <button  class="btn" style="background-color: #fd7e14;">View Product</button>
+                            </a> 
+                        </div>
+
+                    </div>
+                    <!-- card -->
+                </div>
+         
+            </div>
+        </div>
+    </div>
+    <!-- products display  -->
+{% endblock %}

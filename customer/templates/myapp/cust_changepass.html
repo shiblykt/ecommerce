@@ -1,0 +1,35 @@
+{% extends 'myapp/header.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid login-container">
+    <div class="row">
+        <div class="col-lg-4 col-md-3 col-sm-2"></div>
+        <div class="col-lg-4 col-md-6 col-sm-8">
+            <div class="form-login">
+                <br>
+                <h3 class="login-head">Change password</h3><br>
+
+                <form method="POST" action="">
+
+                    <div>
+                        <input type="text" name="otp" class="form-control input-sm chat-input" placeholder="Enter your OTP" />
+                        <br>
+                        <input type="password" name="password" class="form-control input-sm chat-input" placeholder="password" /><br>
+                        <input type="password" name="cnfPassword" class="form-control input-sm chat-input" placeholder="Confirm password" />
+                        <span class="group-btn"><br>
+                            <button class="btn btn-md" type="button" style="background-color: #00796b; color: white;">
+                                Change password
+                            </button>
+                        </span>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-md-3 col-sm-2"></div>
+    </div>
+</div>
+
+{% endblock %}

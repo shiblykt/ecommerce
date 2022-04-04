@@ -1,0 +1,20 @@
+#logo{
+    width:190px
+}
+.navbar{
+    background-color: #e0f2f1;
+}
+.login-btn{
+    background-color: #fd7e14;
+}
+.base-nav{
+    background-color: #00796b;
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ;
+  }
+  .base-nav a{
+    color:black;
+  }
+  .footer{
+    background-color: #e0f2f1;
+  }

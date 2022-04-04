@@ -1,0 +1,47 @@
+{% extends 'myapp/header.html' %}
+{% load static %}
+{% block content %}
+<!-- signup form container -->
+<div class="container-fluid login-container">
+    <!-- container row -->
+    <div class="row">
+        <!-- dummy div -->
+        <div class="col-lg-4 col-md-3 col-sm-2"></div>
+         <!-- dummy div -->
+
+         <!-- form contents -->
+        <div class="col-lg-4 col-md-6 col-sm-8">
+            <div class="form-login">
+                <br>
+                <h3 class="login-head">Login</h3><br>
+                <p style="color: red;"></p>
+                <form action="" method="POST">
+                    <input type="text" id="username" name="userName" class="form-control input-sm chat-input" placeholder="username">
+                    <br>
+                    <input type="password" id="userpassword" name="userPassword" class="form-control input-sm chat-input" placeholder="password">
+                    <br>
+                    <div class="wrapper">
+                        <span class="group-btn">
+                            <button class="btn btn-md" type="submit" style="background-color: #00796b; color: white;">
+                                login <i class="fa fa-sign-in"></i>
+                            </button>
+                        </span><br>
+                        <span>
+                            <br>
+                            <a href="{% url 'forgotpassword' %}"><label for="" class="">Forgot password?</label></a><br>
+                            <a href="{% url 'signup' %}"><label for="" class="">Create an account?</label></a>
+                        </span>
+                    </div>
+                </form>
+            </div>
+             <!-- form contents -->
+
+        </div>
+         <!-- dummy div -->
+        <div class="col-lg-4 col-md-3 col-sm-2"></div>
+         <!-- dummy div -->
+    </div>
+    <!-- container row -->
+</div>
+<!-- signup form container -->
+{% endblock %}
