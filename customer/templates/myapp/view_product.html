@@ -1,0 +1,44 @@
+{% extends 'myapp/header.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- start of navigation links to other pages -->
+        <div class="col-md-12">
+            <ul class="nav ">
+                <li class="nav-item">
+                    <a class="nav-link  link-dark" href="">Home /</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-dark" href=""> /</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-dark  " href=""> /</a>
+                </li>
+            </ul>
+        </div>
+        <!-- end of navigation links to other pages -->
+        <!-- start of product pictures -->
+        <div class="col-md-8">
+            <img src="{% static 'assets/oppo-1.jpg' %}" class="card-img-top" alt="product image" style="width:100%">
+        </div>
+        <!-- end of product pictures -->
+        <!-- start product details -->
+        <div class="col-md-4">
+            <h3>product title</h3>
+            <h6>product description</h6>
+            <button type="button" class="btn-xs rounded-3 bg-transparent" disabled>4.5 stars</button>
+            <hr>
+            <h4 style="display: inline;" class="p-1">Rs.</h4><br><br>
+            <h6 class="font-weight-bolder">Quantity required</h6>
+            <input type="number" class="form-control" id="quantity"  value="1" min="1" placeholder="Enter quantity">
+            <br><br>
+            <button type="button" class="btn" href="" style="background-color: #fd7e14;">Add to Bag</button>
+            <button type="button" class="btn border-dark">Wishlist</button>
+        </div>
+        <!-- end of product details -->
+    </div>
+</div>
+
+{% endblock %}

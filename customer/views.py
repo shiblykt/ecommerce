@@ -22,3 +22,6 @@ def customerprofile(request):
 
 def store(request):
     return render(request,'myapp/store.html')
+
+def productview(request):
+    return render(request,'myapp/view_product.html')
