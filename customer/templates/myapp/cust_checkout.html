@@ -1,0 +1,41 @@
+{% extends 'myapp/header.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <div class="row" style="min-height: 300px;">
+        <h2>Your Bag</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Image</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Total Price</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td><img src="{% static 'assets/oppo-1.jpg' %}" alt="" srcset="" height="100px" width="100px"></td>
+                    <td>product title</td>
+                    <td>
+                        <input type="number" value="" min="1" max="99" style="width: 40px;">
+                    </td>
+                    <td><span>&#8377;</span><input type="number" value="" min="1" readonly></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><b> total_ammount </b></td>
+                    <td></td>
+                    <td><span>&#8377;</span><input type="text" value="" readonly></td>
+                </tr>
+
+            </tbody>
+        </table>
+        <button  class="btn btn-success btn-lg float-right"> Checkout </button>
+    </div>
+</div> <br>
+
+{% endblock %}

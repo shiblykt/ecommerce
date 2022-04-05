@@ -25,3 +25,6 @@ def store(request):
 
 def productview(request):
     return render(request,'myapp/view_product.html')
+
+def checkout(request):
+    return render(request,'myapp/cust_checkout.html')
