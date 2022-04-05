@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{% static 'style/reseller_master.css' %}">
+    <link rel="icon" type="image/x-icon" href="/static/assets/favicon.png">
     <title>shoppingCS seller</title>
 
 
@@ -46,11 +47,9 @@
         <!-- Sidebar -->
         <div class="bg-light border-right" id="sidebar-wrapper">
             <div class="theme-color list-group list-group-flush">
-                <a href="{% url 'home' %}" class="bg-light list-group-item list-group-item-action font-weight-bold">Home</a>
+                <a href="{% url 'seller' %}" class="bg-light list-group-item list-group-item-action font-weight-bold">Home</a>
                 <a href="{% url 'products' %}" class="bg-light list-group-item list-group-item-action font-weight-bold" id="products">All Products</a>
                 <a href="{% url 'addproduct' %}" class="bg-light list-group-item list-group-item-action font-weight-bold" id="addProduct">Add a product</a>
-                <a href="#" class="bg-light list-group-item list-group-item-action font-weight-bold">Option 2</a>
-                <a href="#" class="bg-light list-group-item list-group-item-action font-weight-bold">Option 3</a>
             </div>
         </div>
        

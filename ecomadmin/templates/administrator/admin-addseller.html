@@ -1,0 +1,44 @@
+{% extends 'administrator/admin_master.html' %}
+{% load static %} {% block admin_content %}
+
+<br>
+<h3>Approve Resellers</h3>
+<table class="table table-bordered" id="request_table">
+    <thead>
+        <tr>
+            <th scope="col">Company Name & ID</th>
+            <th scope="col">Email</th>
+            <th scope="col">Address</th>
+            <th scope="col">Mobile</th>
+            <th scope="col">Bank Details <br> Holder Name <br> Acc No <br>IFSC</th>
+            <th scope="col">Request Date</th>
+            <th scope="col">Action</th>
+            <th scope="col">Status</th>
+        </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            <td>
+                companyname <br>companyregid
+            </td>
+            <!--  -->
+            <td>useremail</td>
+            <!--  -->
+            <td>
+                address<br>country
+            </td>
+            <td>mobile</td>
+            <td>
+                bankaccountholder<br>bankacccountnumber<br>bankacccountifsc</td>
+            <!--  -->
+            <td>date joined</td>
+            <!--  -->
+            <td><button class=" btn btn-link text-success">Approve</button> <button class=" btn btn-link text-danger">Decline</button></td>
+            <td>active</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+
+{% endblock %}
